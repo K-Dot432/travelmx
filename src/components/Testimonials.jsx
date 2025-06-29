@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import avatarImage from "../assets/avatarImage.jpeg"; // Usa WebP
+import avatarImage from "../assets/avatar.png"; // Usa WebP
 
 export default function Testimonials() {
   const [loaded, setLoaded] = useState(false);

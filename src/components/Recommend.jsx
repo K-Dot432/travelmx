@@ -18,8 +18,8 @@ import {
 import { MdPayment, MdCancel } from "react-icons/md";
 
 // Importa tus imágenes de destino aquí
-import Destination1 from "../assets/Destination1.png";
-import Destination2 from "../assets/Destination2.png";
+import Destination1 from "../assets/destino1.png";
+import Destination2 from "../assets/destino2.png";
 
 export default function Recommend() {
   const [loaded, setLoaded] = useState(false);
