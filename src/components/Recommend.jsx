@@ -13,13 +13,24 @@ import {
   FaCheck,
   FaHotel,
   FaExclamationTriangle,
-  FaBus
+  FaBus,
+  FaUmbrellaBeach,
+  FaMountain,
+  FaCity,
+  FaTree
 } from "react-icons/fa";
 import { MdPayment, MdCancel } from "react-icons/md";
 
 // Importa tus imágenes de destino aquí
 import Destination1 from "../assets/destino1.png";
 import Destination2 from "../assets/destino2.png";
+import Destination3 from "../assets/Destino3.png";
+import Destination4 from "../assets/Destino4.png";
+import Destination5 from "../assets/Destination6.png";
+import Destination6 from "../assets/destino9.jpg";
+import Destination7 from "../assets/Destination2.png";
+import Destination8 from "../assets/Destination8.jpg";
+
 
 export default function Recommend() {
   const [loaded, setLoaded] = useState(false);
@@ -161,12 +172,13 @@ export default function Recommend() {
       image: Destination1,
       title: "Cancún, México",
       description: "Disfruta de las playas más hermosas del Caribe Mexicano con todos los servicios de lujo.",
-      basePrice: 15800,
+      basePrice: 5200,
       duration: "4 noches / 5 días",
       rating: 4.8,
       location: "Quintana Roo",
       features: ["Playa", "Todo Incluido", "Familiar"],
       packageType: [1, 2, 4],
+      icon: <FaUmbrellaBeach />,
       transports: [
         {
           type: "Avión",
@@ -196,12 +208,13 @@ export default function Recommend() {
       image: Destination2,
       title: "Los Cabos, México",
       description: "Experiencia única donde el desierto se encuentra con el mar en el Pacífico Mexicano.",
-      basePrice: 18500,
+      basePrice: 3500,
       duration: "3 noches / 4 días",
       rating: 4.7,
       location: "Baja California Sur",
       features: ["Romántico", "Aventura", "Lujo"],
       packageType: [1, 2, 3],
+      icon: <FaUmbrellaBeach />,
       transports: [
         {
           type: "Avión",
@@ -226,7 +239,217 @@ export default function Recommend() {
         { type: "Tres estrellas", cost: 1800 }
       ]
     },
-    // ... otros destinos
+    {
+      id: 3,
+      image: Destination3,
+      title: "Ciudad de México",
+      description: "Descubre la riqueza cultural, histórica y gastronómica de la capital mexicana.",
+      basePrice: 2800,
+      duration: "3 noches / 4 días",
+      rating: 4.6,
+      location: "CDMX",
+      features: ["Cultural", "Histórico", "Gastronomía"],
+      packageType: [1, 2, 3],
+      icon: <FaCity />,
+      transports: [
+        {
+          type: "Avión",
+          icon: <FaPlane />,
+          cost: 1800,
+          duration: "1h 30m",
+          description: "Vuelo desde cualquier ciudad principal"
+        },
+        {
+          type: "Autobús",
+          icon: <FaBus />,
+          cost: 800,
+          duration: "4-8h",
+          description: "Servicio ejecutivo desde ciudades cercanas"
+        }
+      ],
+      hotels: [
+        { type: "Gran turismo", cost: 4000 },
+        { type: "Boutique", cost: 3500 },
+        { type: "Cinco estrellas", cost: 3200 },
+        { type: "Cuatro estrellas", cost: 2200 },
+        { type: "Tres estrellas", cost: 1200 }
+      ]
+    },
+    {
+      id: 4,
+      image: Destination4,
+      title: "Puerto Vallarta",
+      description: "Paraíso tropical con playas doradas, montañas verdes y un encantador centro histórico.",
+      basePrice: 3800,
+      duration: "4 noches / 5 días",
+      rating: 4.7,
+      location: "Jalisco",
+      features: ["Playa", "Romántico", "Aventura"],
+      packageType: [1, 2, 4],
+      icon: <FaUmbrellaBeach />,
+      transports: [
+        {
+          type: "Avión",
+          icon: <FaPlane />,
+          cost: 2200,
+          duration: "1h 45m",
+          description: "Vuelo directo desde Ciudad de México"
+        },
+        {
+          type: "Autobús",
+          icon: <FaBus />,
+          cost: 1000,
+          duration: "10h",
+          description: "Servicio ejecutivo desde Guadalajara"
+        }
+      ],
+      hotels: [
+        { type: "Gran turismo", cost: 4200 },
+        { type: "Boutique", cost: 3600 },
+        { type: "Cinco estrellas", cost: 3300 },
+        { type: "Cuatro estrellas", cost: 2300 },
+        { type: "Tres estrellas", cost: 1300 }
+      ]
+    },
+    {
+      id: 5,
+      image: Destination5,
+      title: "Chiapas (Palenque)",
+      description: "Explora la magia de la cultura maya en medio de la selva tropical.",
+      basePrice: 3200,
+      duration: "3 noches / 4 días",
+      rating: 4.5,
+      location: "Chiapas",
+      features: ["Cultural", "Aventura", "Ecológico"],
+      packageType: [2, 3, 4],
+      icon: <FaTree />,
+      transports: [
+        {
+          type: "Avión",
+          icon: <FaPlane />,
+          cost: 2800,
+          duration: "1h 15m",
+          description: "Vuelo a Villahermosa + traslado terrestre"
+        },
+        {
+          type: "Autobús",
+          icon: <FaBus />,
+          cost: 900,
+          duration: "12h",
+          description: "Servicio nocturno desde CDMX"
+        }
+      ],
+      hotels: [
+        { type: "Ecolodge", cost: 3800 },
+        { type: "Boutique", cost: 3200 },
+        { type: "Cuatro estrellas", cost: 2500 },
+        { type: "Tres estrellas", cost: 1500 }
+      ]
+    },
+    {
+      id: 6,
+      image: Destination8,
+      title: "Guanajuato",
+      description: "Ciudad colonial llena de color, historia y una vibrante escena cultural.",
+      basePrice: 2600,
+      duration: "2 noches / 3 días",
+      rating: 4.6,
+      location: "Guanajuato",
+      features: ["Cultural", "Histórico", "Romántico"],
+      packageType: [1, 2, 3],
+      icon: <FaCity />,
+      transports: [
+        {
+          type: "Avión",
+          icon: <FaPlane />,
+          cost: 2000,
+          duration: "1h",
+          description: "Vuelo a León + traslado terrestre"
+        },
+        {
+          type: "Autobús",
+          icon: <FaBus />,
+          cost: 600,
+          duration: "5h",
+          description: "Servicio ejecutivo desde CDMX"
+        }
+      ],
+      hotels: [
+        { type: "Boutique", cost: 3000 },
+        { type: "Histórico", cost: 2800 },
+        { type: "Cuatro estrellas", cost: 2000 },
+        { type: "Tres estrellas", cost: 1200 }
+      ]
+    },
+    {
+      id: 7,
+      image: Destination7,
+      title: "Copper Canyon",
+      description: "Maravilla natural más grande que el Gran Cañón, con el famoso tren Chepe.",
+      basePrice: 4500,
+      duration: "5 noches / 6 días",
+      rating: 4.8,
+      location: "Chihuahua",
+      features: ["Aventura", "Naturaleza", "Cultural"],
+      packageType: [2, 3, 4],
+      icon: <FaMountain />,
+      transports: [
+        {
+          type: "Avión",
+          icon: <FaPlane />,
+          cost: 3200,
+          duration: "2h",
+          description: "Vuelo a Chihuahua + traslado"
+        },
+        {
+          type: "Tren",
+          icon: <FaBus />,
+          cost: 2500,
+          duration: "16h",
+          description: "Experiencia en el Chepe Express"
+        }
+      ],
+      hotels: [
+        { type: "Ecolodge", cost: 5000 },
+        { type: "Boutique", cost: 4200 },
+        { type: "Tres estrellas", cost: 2000 }
+      ]
+    },
+    {
+      id: 8,
+      image: Destination6,
+      title: "Oaxaca",
+      description: "Capital cultural con gastronomía de fama mundial y ruinas zapotecas cercanas.",
+      basePrice: 2900,
+      duration: "3 noches / 4 días",
+      rating: 4.7,
+      location: "Oaxaca",
+      features: ["Cultural", "Gastronomía", "Histórico"],
+      packageType: [1, 2, 3],
+      icon: <FaCity />,
+      transports: [
+        {
+          type: "Avión",
+          icon: <FaPlane />,
+          cost: 2100,
+          duration: "1h 15m",
+          description: "Vuelo directo desde CDMX"
+        },
+        {
+          type: "Autobús",
+          icon: <FaBus />,
+          cost: 700,
+          duration: "6h",
+          description: "Servicio ejecutivo desde CDMX"
+        }
+      ],
+      hotels: [
+        { type: "Boutique", cost: 3500 },
+        { type: "Histórico", cost: 3000 },
+        { type: "Cuatro estrellas", cost: 2200 },
+        { type: "Tres estrellas", cost: 1300 }
+      ]
+    }
   ];
 
   const loadMoreDestinations = () => {
@@ -242,8 +465,8 @@ export default function Recommend() {
   return (
     <Section id="recommend" className={loaded ? "visible" : ""}>
       <div className="title">
-        <h2>Destinos Populares</h2>
-        <p className="subtitle">Explora nuestros destinos más solicitados por nuestros clientes</p>
+        <h2>Destinos Populares en México</h2>
+        <p className="subtitle">Explora la diversidad de nuestros destinos más solicitados, desde playas hasta ciudades coloniales</p>
       </div>
       
       <div className="packages">
@@ -280,6 +503,9 @@ export default function Recommend() {
               <div className="rating">
                 <FaStar className="star-icon" />
                 {destination.rating}
+              </div>
+              <div className="destination-icon">
+                {destination.icon}
               </div>
             </div>
             
@@ -322,6 +548,13 @@ export default function Recommend() {
         ))}
       </div>
       
+      {visibleDestinations < destinations.filter(dest => dest.packageType.includes(activePackage)).length && (
+        <button className="view-more-btn" onClick={loadMoreDestinations}>
+          Ver Más Destinos
+        </button>
+      )}
+      
+      {/* Resto del código (modales, sección de reservas) permanece igual */}
       {showBookingModal && selectedDestination && (
         <ModalOverlay>
           <ModalContainer>
@@ -577,7 +810,7 @@ export default function Recommend() {
   );
 }
 
-// Estilos
+// Estilos (permanecen iguales)
 const fadeIn = keyframes`
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -846,6 +1079,22 @@ const DestinationCard = styled.div`
         color: #ffd700;
         font-size: 1rem;
       }
+    }
+    
+    .destination-icon {
+      position: absolute;
+      top: 1.2rem;
+      left: 1.2rem;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      font-size: 1.2rem;
     }
   }
   

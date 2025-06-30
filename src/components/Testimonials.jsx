@@ -32,7 +32,7 @@ export default function Testimonials() {
   return (
     <Section id="testimonials" className={loaded ? "visible" : ""}>
       <div className="title">
-        <h2>Testimonios de Clientes</h2>
+        <h2>Reseñas de Clientes</h2>
         <p>Lo que nuestros clientes dicen sobre nosotros</p>
       </div>
       <div className="testimonials">

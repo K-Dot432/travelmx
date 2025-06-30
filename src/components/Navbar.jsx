@@ -64,7 +64,7 @@ const NavbarWithAuth = () => {
             <a href="#recommend">Lugares</a>
           </li>
           <li>
-            <a href="#testimonials">Testimonios</a>
+            <a href="#testimonials">Opiniones</a>
           </li>
         </ul>
         
